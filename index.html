@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta name="description" content="Vertex Interactive — независимая игровая студия. Линия фронта для Windows, Android и браузера.">
+  <title>Vertex Interactive</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/guard/guard.css"><script src="/guard/guard.js" defer></script>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Vertex Interactive">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6h6.5L16 19.5 21.5 6H28L18.6 27h-5.2z" fill="currentColor"/></svg>
+      <span>Vertex <i>Interactive</i></span>
+    </a>
+    <nav class="links">
+      <a href="#games">Игры</a>
+      <a href="#download">Скачать</a>
+      <a href="#updates">Обновления</a>
+      <a href="#studio">Студия</a>
+      <a href="#help">Помощь</a>
+    </nav>
+    <a class="btn btn-sm" href="#download">Скачать</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="hero" aria-label="Vertex Interactive"></section>
+
+    <section class="sec" id="games">
+      <header class="sec-h"><span class="kicker">01 — Игры</span><h2>Проекты студии</h2></header>
+      <div class="games" id="gameGrid"></div>
+    </section>
+
+    <section class="sec" id="download">
+      <header class="sec-h"><span class="kicker">02 — Скачать</span><h2>Линия фронта</h2><p>Выберите платформу. Игра больше не разрабатывается — 1.3.0 финальная версия, старые остаются в архиве.</p></header>
+      <div class="dl" id="dl"></div>
+    </section>
+
+    <section class="sec" id="shots">
+      <header class="sec-h"><span class="kicker">03 — Кадры</span><h2>Из игры</h2></header>
+      <div class="strip" id="strip"></div>
+    </section>
+
+    <section class="sec" id="updates">
+      <header class="sec-h"><span class="kicker">04 — Обновления</span><h2>История версий</h2></header>
+      <div class="tl" id="timeline"></div>
+    </section>
+
+    <section class="sec" id="studio">
+      <header class="sec-h"><span class="kicker">05 — Студия</span><h2>Vertex Interactive</h2></header>
+      <div class="studio">
+        <p class="studio-lead">Небольшая независимая студия. Мы делаем стратегии и симуляторы, где важна точность: реальные карты, честная механика и внимание к деталям.</p>
+        <div class="studio-cols">
+          <div><b>Сейчас</b><span>Новая игра студии — ATOM WORLD. Анонс скоро.</span></div>
+          <div><b>Платформы</b><span>Windows, Android и браузер. Бесплатно, без лаунчеров и рекламы.</span></div>
+          <div><b>Линия фронта</b><span>Разработка завершена. Версия 1.3.0 — финальная, обновлений больше не будет.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="help">
+      <header class="sec-h"><span class="kicker">06 — Помощь</span><h2>Установка и вопросы</h2></header>
+      <div class="faq" id="faq"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="brand"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6h6.5L16 19.5 21.5 6H28L18.6 27h-5.2z" fill="currentColor"/></svg><span>Vertex <i>Interactive</i></span></div>
+    <p>© 2026 Vertex Interactive</p>
+    <a href="game/" target="_blank" rel="noopener">Играть в браузере</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden><button class="lb-x" aria-label="Закрыть">×</button><img alt=""><p></p></div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
